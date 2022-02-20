@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnare</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <!-- <script src='home.js' defer></script> -->
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <script>
+        let ques_no = "<%= Question %>"
+        let Name = "<%= Name %>"
+        let RollNo = "<%= RollNo %>"
+    </script>
+</head>
+<body onload="startTimer()">
+    <div class="header">
+        <h2>Mathematics Questionnare</h2>
+        <h3>Class 8</h3>
+    </div>
+    <div class="timer">
+        <h3>Time</h3>
+        <h3 id="stopwatch">00:00:00</h3>
+    </div>
+    <div class="question">
+        <h4>Question text goes here</h4>
+    </div>
+    <div class="options">
+        <div class="opradio">
+            <label class="rad">
+                <input type="radio" id="op1" name="option">
+                <span>option 1</span><br>
+            </label>
+            <label class="rad">
+                <input type="radio" id="op2" name="option">
+                <span>option 2</span><br>
+            </label>
+            <label class="rad">
+                <input type="radio" id="op3" name="option">
+                <span>option 3</span><br>
+            </label>
+            <label class="rad">
+                <input type="radio" id="op4" name="option">
+                <span>option 4</span><br>
+            </label>
+        </div>
+    </div>
+    <div class="next">
+        <button id="nextques" onclick="next()">Next question</button>
+    </div>
+</body>
+<script>
+    const timer = document.getElementById("stopwatch");
+    let hr = 0;
+    let min = 0;
+    let sec = 0;
+    function startTimer() {
+        console.log(timer);
+        hr=0;
+        min=0;
+        sec=0;
+        timerCycle();
+    }
+    function timerCycle() {
+        sec = parseInt(sec);
+        min = parseInt(min);
+        hr = parseInt(hr);
+        sec = sec + 1;
+        if (sec == 60) {
+            min = min + 1;
+            sec = 0;
+        }
+        if (min == 60) {
+            hr = hr + 1;
+            min = 0;
+            sec = 0;
+        }
+        if (sec < 10 || sec == 0) {
+            sec = '0' + sec;
+        }
+        if (min < 10 || min == 0) {
+            min = '0' + min;
+        }
+        if (hr < 10 || hr == 0) {
+            hr = '0' + hr;
+        }
+        timer.innerHTML = hr + ':' + min + ':' + sec;
+        setTimeout("timerCycle()", 1000);
+    }
+    function resetTimer() {
+        timer.innerHTML = '00:00:00';
+    }
+    function next() {
+        if(ques_no<15){
+            ques_no = parseInt(ques_no) + 1;
+            console.log(ques_no);
+            window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
+        }
+        else{
+            window.location.replace('/confirmation');
+        }
+    }
+</script>
+</html>

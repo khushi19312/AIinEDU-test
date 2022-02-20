@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <!-- <script src='home.js' defer></script> -->
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <script>
+        let proceed = ()=>{
+            console.log("clicked")
+            window.location.replace('/questions?ques=1&name='+document.querySelector("#name_input").value+'&rollno='+document.querySelector("#rollno_input").value);
+        }
+    </script>
+</head>
+<body>
+    <div class="info">
+        <h1 id="heading">Student details</h1>
+        <h5 id="prompts">Enter details and proceed to take the quiz</h5>
+        <div>
+            <h3>Name</h3>
+            <input type="text" class="input" id="name_input">
+        </div>
+        <div>
+            <h3>Roll number</h3>
+            <input type="text" class="input" id="rollno_input">
+        </div>
+        <button id="button1" onclick="proceed()">Proceed</button>
+        <!-- <button id="button2">Clear</button> -->
+    </div>
+    <div class="instructions">
+        <h1 id="heading">Instructions</h1>
+        <h5 id="prompts">All instructions go here</h5>
+        <h4>All instructions go here</h4>
+    </div>
+</body>
+<script>
+</script>
+</html>

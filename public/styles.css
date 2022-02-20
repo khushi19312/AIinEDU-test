@@ -1,0 +1,218 @@
+/*
+Teal Green #4297A0 | Ivory #F4EAE6 | Coral #E57F84 | Misty Blue #2F5061
+dark grey #222222 | blue grey #4b4e6d | blue green #2bad8d | cadet grey #95a3b3
+
+*/
+/* Using the font face "Roboto" throughout the web application */
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype-variations");
+    font-style: normal;
+}
+body{
+    background-color: #ffffff;
+    /* background-color: #F4EAE6; */
+}
+.info{
+    font-family: "Roboto";
+    height: 80%;
+    width: 40%;
+    top: 18%;
+    left: 10%;
+    position: absolute;
+    /* background-color: #E57F84; */
+    padding: 20px;
+    color: #2F5061;
+}
+#heading{
+}
+#prompts{
+    /* color: #4297A0; */
+    color: #2bad8d;
+}
+.input{
+    font-family: "Roboto";
+    font-size: 15px;
+    position: relative;
+    width: 40%;
+    padding: 6px;
+    border-color: #4b4e6d;
+    border-radius: 5px;
+    outline: none;
+    color: #4b4e6d;
+    background-color: white;
+}
+#name_input{
+    top: 0%;
+    left: 0%;
+}
+#rollno_input{
+    top: 0%;
+    left: 0%;
+}
+#button1{
+    font: "Roboto";
+    position: relative;
+    top: 5%;
+    left: 0%;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2bad8d;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+}
+#button2{
+    position: relative;
+    top: 5%;
+    left: 4%;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E57F84;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+.instructions{
+    font-family: "Roboto";
+    height: 80%;
+    width: 40%;
+    top: 18%;
+    left: 55%;
+    position: absolute;
+    /* background-color: #E57F84; */
+    padding: 20px;    
+    color: #222222;
+}
+.header{
+    font-family: "Roboto";
+    color: #2bad8d;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 80vw;
+    height: 10vh;
+}
+.timer{
+    font-family: "Roboto";
+    color: #2bad8d;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    width: 5vw;
+    height: 10vh;
+}
+#stopwatch{
+    font-family: "Roboto";
+    color: #4b4e6d;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 5vw;
+    height: 10vh;
+}
+.question{
+    font-family: "Roboto";
+    color: #4b4e6d;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80vw;
+    height: 20vh;
+}
+.options{
+    font-family: "Roboto";
+    color: #2bad8d;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80vw;
+    height: 40vh;
+}
+.opradio{
+    position: absolute;
+    top: 4%;
+    left: 0%;
+}
+/* code from https://codepen.io/avstorm/pen/eYNLwVd?editors=1100*/
+.rad{
+    color: #2bad8d;
+    border-color: #2bad8d;
+    border-radius: 50px;
+    margin: 10px;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.rad:hover, .rad:focus-within {
+    background: rgba(159, 159, 159, 0.1);
+}
+.rad input {
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+    box-shadow: inset 0 0 0 1px #9F9F9F;
+    box-shadow: inset 0 0 0 1.5px #9F9F9F;
+    appearance: none;
+    padding: 8px;
+    margin: 8px;
+    transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+    pointer-events: none;
+}
+.rad input:focus {
+    outline: none;
+}
+.rad input:checked {
+    box-shadow: inset 0 0 0 6px #2bad8d;
+}
+.rad span {
+    font-family: "Roboto";
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 8px;
+}
+/* --------------------------------------------------*/
+.next{
+    font-family: "Roboto";
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    width: 10vw;
+    height: 10vh;
+}
+#nextques{
+    font: "Roboto";
+    position: absolute;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2bad8d;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+.update{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+#thankyou{
+    font-family: "Roboto";
+    color: #4b4e6d;
+}
+#message{
+    font-family: "Roboto";
+    color: #2bad8d;
+}
+
