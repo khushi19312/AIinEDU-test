@@ -4,6 +4,11 @@ const app = express()
 const server = require('http').Server(app)
 const port = process.env.PORT || 3000;
 
+const fs = require('fs');
+let data = fs.readFileSync(path.join(__dirname, '/public/questions.json'));
+let questions = JSON.parse(data);
+// console.log(questions[1]);
+
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "/public/")));
@@ -14,11 +19,12 @@ app.get("/", (req, res) => {
 
 app.get("/questions", (req, res) => {
     // res.send(req.query.name+" "+req.query.rollno);
-    res.render("question", { title: "Questionnaire", Question: req.query.ques, Name: req.query.name, RollNo: req.query.rollno });
+    // res.json(questions[req.query.ques]);
+    res.render("question", { title: "Questionnaire", Question: req.query.ques, Name: req.query.name, RollNo: req.query.rollno, q: questions[req.query.ques].ques, op: questions[req.query.ques].options, ans: questions[req.query.ques].ans });
+    // 
 });
 
 app.get("/confirmation", (req, res) => {
-    // res.send(req.query.name+" "+req.query.rollno);
     res.render("confirmation", { title: "Confirmation"});
 });
 

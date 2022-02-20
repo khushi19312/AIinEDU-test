@@ -8,10 +8,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
     <!-- <script src='home.js' defer></script> -->
     <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <!-- <script type="text/javascript" src="../public/questions.json"></script> -->
     <script>
         let ques_no = "<%= Question %>"
         let Name = "<%= Name %>"
         let RollNo = "<%= RollNo %>"
+        let q = "<%= q %>"
+        let op = "<%= op %>"
+        let ans = "<%= ans %>"
+        // fetch("questions.json").then( (resp) => {
+        //     questions = resp.json();
+        // })
+        op = op.split(",")
+        console.log(typeof op);
     </script>
 </head>
 <body onload="startTimer()">
@@ -24,7 +33,7 @@
         <h3 id="stopwatch">00:00:00</h3>
     </div>
     <div class="question">
-        <h4>Question text goes here</h4>
+        <h3>Question text goes here</h3>
     </div>
     <div class="options">
         <div class="opradio">
@@ -52,11 +61,18 @@
 </body>
 <script>
     const timer = document.getElementById("stopwatch");
+    let QUES = document.querySelectorAll(".question h3");
+    let options = document.querySelectorAll(".rad span")
     let hr = 0;
     let min = 0;
     let sec = 0;
     function startTimer() {
-        console.log(timer);
+        // console.log(QUES[0]);
+        QUES[0].innerHTML = q;
+        options[0].innerHTML = op[0];
+        options[1].innerHTML = op[1];
+        options[2].innerHTML = op[2];
+        options[3].innerHTML = op[3];
         hr=0;
         min=0;
         sec=0;
