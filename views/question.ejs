@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionnare</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- <script src='home.js' defer></script> -->
     <link rel="stylesheet" type="text/css" href="/styles.css"/>
     <!-- <script type="text/javascript" src="../public/questions.json"></script> -->
@@ -20,7 +21,7 @@
         //     questions = resp.json();
         // })
         op = op.split(",")
-        console.log(typeof op);
+        // console.log(typeof op);
     </script>
 </head>
 <body onload="startTimer()">
@@ -35,22 +36,23 @@
     <div class="question">
         <h3>Question text goes here</h3>
     </div>
+    <!-- <form></form> -->
     <div class="options">
         <div class="opradio">
             <label class="rad">
-                <input type="radio" id="op1" name="option">
+                <input type="radio" id="op1" name="option" value=0>
                 <span>option 1</span><br>
             </label>
             <label class="rad">
-                <input type="radio" id="op2" name="option">
+                <input type="radio" id="op2" name="option" value=1>
                 <span>option 2</span><br>
             </label>
             <label class="rad">
-                <input type="radio" id="op3" name="option">
+                <input type="radio" id="op3" name="option" value=2>
                 <span>option 3</span><br>
             </label>
             <label class="rad">
-                <input type="radio" id="op4" name="option">
+                <input type="radio" id="op4" name="option" value=3>
                 <span>option 4</span><br>
             </label>
         </div>
@@ -108,9 +110,19 @@
         timer.innerHTML = '00:00:00';
     }
     function next() {
+        // console.log(op[document.querySelector('input[name="option"]:checked').value]);
+        let answer = op[document.querySelector('input[name="option"]:checked').value];0
+        // $.post("/question?ques="+ques_no+"&name="+Name+"&rollno="+RollNo,
+        // {
+        //     ques: ques_no,
+        //     ans: answer
+        // },
+        // function (data, status) {
+        //     console.log(data);
+        // });
         if(ques_no<15){
             ques_no = parseInt(ques_no) + 1;
-            console.log(ques_no);
+            // console.log(ques_no);
             window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
         }
         else{

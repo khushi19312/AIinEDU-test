@@ -24,6 +24,10 @@ app.get("/questions", (req, res) => {
     // 
 });
 
+app.post("/questions", (req, res) => {
+    console.log(req.body.ques+" "+req.body.ans);
+});
+
 app.get("/confirmation", (req, res) => {
     res.render("confirmation", { title: "Confirmation"});
 });
