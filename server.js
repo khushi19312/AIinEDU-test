@@ -24,6 +24,16 @@ app.get("/questions", (req, res) => {
     // 
 });
 
+app.get("/answer", (req, res) => {
+    console.log(req.query.ques-1+" "+req.query.ans+" "+req.query.time);
+    // res.send(req.query.name+" "+req.query.rollno);
+    // res.json(questions[req.query.ques]);
+    if(req.query.ques<16) res.redirect('/questions?ques='+req.query.ques+'&name='+req.query.name+'&rollno='+req.query.rollno);
+    else res.redirect('/confirmation');
+    // res.render("question", { title: "Questionnaire", Question: req.query.ques, Name: req.query.name, RollNo: req.query.rollno, q: questions[req.query.ques].ques, op: questions[req.query.ques].options, ans: questions[req.query.ques].ans });
+    // 
+});
+
 app.post("/questions", (req, res) => {
     console.log(req.body.ques+" "+req.body.ans);
 });

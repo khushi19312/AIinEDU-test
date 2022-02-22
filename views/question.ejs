@@ -109,9 +109,14 @@
     function resetTimer() {
         timer.innerHTML = '00:00:00';
     }
+    let ret = []
     function next() {
         // console.log(op[document.querySelector('input[name="option"]:checked').value]);
-        let answer = op[document.querySelector('input[name="option"]:checked').value];0
+        let answer = op[document.querySelector('input[name="option"]:checked').value];
+        let dict = {}
+        dict['ans']=answer;
+        dict['time']=hr + ':' + min + ':' + sec;
+        ret[ques_no]=dict;
         // $.post("/question?ques="+ques_no+"&name="+Name+"&rollno="+RollNo,
         // {
         //     ques: ques_no,
@@ -120,13 +125,18 @@
         // function (data, status) {
         //     console.log(data);
         // });
-        if(ques_no<15){
+        if(ques_no<=15){
             ques_no = parseInt(ques_no) + 1;
             // console.log(ques_no);
-            window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
+            window.location.replace('/answer?ques='+ques_no+'&ans='+answer+'&time='+hr + ':' + min + ':' + sec+'&name='+Name+'&rollno='+RollNo);
+            // window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
         }
         else{
-            window.location.replace('/confirmation');
+            // console.log(ret[1])
+            // console.log(ret[4])
+            // console.log(ret[8])
+            // console.log(ret[15])
+            // window.location.replace('/confirmation');
         }
     }
 </script>
