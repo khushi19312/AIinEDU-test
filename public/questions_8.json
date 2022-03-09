@@ -1,0 +1,77 @@
+{
+    "1":{
+        "ques":"(⅔+-⅘+7/15+-11/20) = ?", 
+        "options":["-13/60", "11/60", "-19/3", "19/3"], 
+        "ans":"1"
+    },
+    "2":{
+        "ques":"(7/12)^-4 x (7/12)^3x = (7/12)^5", 
+        "options":["-1", "1", "2", "3"], 
+        "ans":"4"
+    },
+    "3":{
+        "ques":"(2 ¼ )^2 = ?", 
+        "options":["2^1/2", "1^1/4", "1^1/2", "None of these"], 
+        "ans":"1"
+    },
+    "4":{
+        "ques":"(72)^½ . (48)^½ = ?", 
+        "options":["-13/60", "11/60", "-19/3", "19/3"], 
+        "ans":"1"
+    },
+    "5":{
+        "ques":"If 5x6 is exactly divisible by 3, then the least value of x is?", 
+        "options":["0", "1", "2", "3"], 
+        "ans":"2"
+    },
+    "6":{
+        "ques":"(82)^2 - (18)^2 = ?", 
+        "options":["8218", "6418", "6400", "7204"], 
+        "ans":"6400"
+    },
+    "7":{
+        "ques":"(4x+8)/(5x+8) = ⅚ , x=?", 
+        "options":["4", "6", "8", "12"], 
+        "ans":"8"
+    },
+    "8":{
+        "ques":" By selling a radio for Rs. 950, a man loses 5%. What percent shall he gain by selling it for Rs. 1040?", 
+        "options":["4%", "4.5%", "5%", "9%"], 
+        "ans":"4%"
+    },
+    "9":{
+        "ques":"3 persons can build a wall in 4 days, then 4 persons can build it in?", 
+        "options":["5 ⅓", "3", "4 ⅓", "None of these"], 
+        "ans":"3"
+    },
+    "10":{
+        "ques":"(180% of x)/2 = 540, x=?", 
+        "options":["400", "480", "600", "560"], 
+        "ans":"600"
+    },
+    "11":{
+        "ques":"How many diagonals are there in a polygon having 12 sides?", 
+        "options":["12", "24", "36", "54"], 
+        "ans":"54"
+    },
+    "12":{
+        "ques":"In a square ABCD, AB=(2x+3) cm and BC=(3x-5) cm. Then the value of x is?", 
+        "options":["4", "5", "6", "8"], 
+        "ans":"8"
+    },
+    "13":{
+        "ques":"The area of a rhombus is 120 cm^2 and one of its diagonals is 24 cm. Each side of the rhombus is?", 
+        "options":["10 cm", "13 cm", "12 cm", "15 cm"], 
+        "ans":"13 cm"
+    },
+    "14":{
+        "ques":"The diameter of a cylinder is 14 cm and its curved surface area is 220 cm^2 . The volume of the cylinder is?", 
+        "options":["770 cm sq.", "1000 cm sq.", "1540 cm sq.", "6622 cm sq."], 
+        "ans":"770 cm sq."
+    },
+    "15":{
+        "ques":"Two coins are tossed simultaneously. What is the probability of getting one head and one tail?", 
+        "options":["1/4", "1/2", "3/4", "2/3"], 
+        "ans":"1/2"
+    }
+}

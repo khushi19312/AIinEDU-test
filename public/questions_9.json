@@ -1,0 +1,77 @@
+{
+    "1":{
+        "ques":"If n = 2^3 x 3^4 x 5^4 x 7, then the number of consecutive zeros in n, where n is a natural number is", 
+        "options":["3", "2", "4", "5"], 
+        "ans":"3"
+    },
+    "2":{
+        "ques":"If p(x)=2x^2-3x+5, then what is the value of (p(0)+p(1))/p(-1)", 
+        "options":["1/10", "4/11", "9/10", "4/5"], 
+        "ans":"9/10"
+    },
+    "3":{
+        "ques":"If x+1 is a factor of 2x^2+kx, then what is the value of k?", 
+        "options":["-2", "-3", "4", "2"], 
+        "ans":"2"
+    },
+    "4":{
+        "ques":"If x + 1/x = 8, then the value of x^2 + 1/x^2 is", 
+        "options":["62", "64", "66", "60"], 
+        "ans":"62"
+    },
+    "5":{
+        "ques":"Coordinates of a point lying on the y-axis satisfying the equation 2x-5y=10 are:", 
+        "options":["(2,0)", "(0,2)", "(0,-2)", "(-2,0)"], 
+        "ans":"(0, -2)"
+    },
+    "6":{
+        "ques":"Which of the following needs a proof?", 
+        "options":["Axioms", "Theorem", "Definition", "Postulate"], 
+        "ans":"Theorem"
+    },
+    "7":{
+        "ques":"The angles of a triangle are in the ratio 4:5:9. The triangle is:", 
+        "options":["An isosceles triangle", "An obtuse angled triangle", "An acute angled triangle", "A right triangle"], 
+        "ans":"A right triangle"
+    },
+    "8":{
+        "ques":"It is given that ⧍ABC ⩭ ⧍FDE and AB=5cm, ∠B=40° and ∠A=80°. Then which of the following is true?", 
+        "options":["DF=5cm, ∠F=60°", "DE=5cm, ∠E=60°", "DF=5cm, ∠E=60°", "DE=5cm, ∠D=60°"], 
+        "ans":"DF=5cm, ∠E=60°"
+    },
+    "9":{
+        "ques":"Four angles of a quadrilateral are (2x+20)°, (3x-30)°, (x+10)°, and (2x)°. Value of x is:", 
+        "options":["40°", "45°", "50°", "55°"], 
+        "ans":"45°"
+    },
+    "10":{
+        "ques":"The mid-points of the sides of a triangle along with any of the vertices as fourth point make a parallelogram of area equal to:", 
+        "options":["ar(⧍ABC)", "1/2 ar(⧍ABC)", "1/3 ar(⧍ABC)", "1/4 ar(⧍ABC)"], 
+        "ans":"1/2 ar(⧍ABC)"
+    },
+    "11":{
+        "ques":"AB is a chord of a circle with radius 'r'. If P is any point on the circle such that APB is a right angle, hen AB is equal to:", 
+        "options":["r", "2r", "3r", "r^2"], 
+        "ans":"2r"
+    },
+    "12":{
+        "ques":"Each of the equal sides of an isosceles triangle is 2cm greater than its height . If the base of the triangle is 12 cm, then its area is", 
+        "options":["48 cm sq.", "36 cm sq.", "24 cm sq.", "40 cm sq."], 
+        "ans":"48 cm sq."
+    },
+    "13":{
+        "ques":"The curved surface area of a cylinder and a cone are equal. If their base radius is same, then the ratio of the slant height of the cone to the height of the cylinder is:", 
+        "options":["2:3", "1:1", "2:1", "1:2"], 
+        "ans":"2:1"
+    },
+    "14":{
+        "ques":"The mean of first n natural numbers is:", 
+        "options":["(n+1)/2", "n(n+1)/2", "n(n-1)/2", "(n-1)/2"], 
+        "ans":"(n+1)/2"
+    },
+    "15":{
+        "ques":"Two coins are tossed simultaneously 300 times. Either one or two heads are obtained 198 times. The probability of getting no heads is:", 
+        "options":["0.45", "0.21", "0.36", "0.34"], 
+        "ans":"0.34"
+    }
+}

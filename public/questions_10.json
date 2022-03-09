@@ -1,0 +1,77 @@
+{
+    "1":{
+        "ques":"If two positive integers a and b are expressible in the form a=pq^2 and b=p^3q; p,q being prime numbers, then LCM(a, b) is", 
+        "options":["pq", "p^3q^3", "p^3q^2", "p^2q^2"], 
+        "ans":"p^3q^2"
+    },
+    "2":{
+        "ques":"If 𝞪, 𝛃 are zeros of the polynomial p(x)=4x^2+3x+7, then 1/𝞪+1/𝛃 is equal to", 
+        "options":["7/3", "-7/3", "3/7", "-3/7"], 
+        "ans":"-3/7"
+    },
+    "3":{
+        "ques":"The sum of the digits of a two-digit number is 9. If 27 is added to it, the digits of the number get reversed. The number is", 
+        "options":["25", "72", "63", "36"], 
+        "ans":"36"
+    },
+    "4":{
+        "ques":"The area of the triangle formed by the line x/a+y/b=1 with the coordinate axes is", 
+        "options":["ab", "2ab", "1/2ab", "1/4ab"], 
+        "ans":"1/2ab"
+    },
+    "5":{
+        "ques":"The value of c for which the equation ax2+bx+c has equal roots is", 
+        "options":["b^2/a", "b^2/4a", "a^2/b", "a^2/4b"], 
+        "ans":"b^2/4a"
+    },
+    "6":{
+        "ques":"If the first and last terms of an AP are 1 and 11. If the sum of its terms is 36, then the number of terms will be", 
+        "options":["5", "6", "7", "8"], 
+        "ans":"6"
+    },
+    "7":{
+        "ques":"The point P(2, 1) lies on the line segment joining points A(4, 2) and B(8, 4), then", 
+        "options":["AP=1/3 AB", "AP=BP", "PB=1/3 AB", "AP=1/2 AB"], 
+        "ans":"AP=1/2 AB"
+    },
+    "8":{
+        "ques":"PQ is a tangent to a circle with center O at the point P. If △OPQ is an isosceles triangle, then ∠OQP is equal to", 
+        "options":["30°", "45°", "60°", "90°"], 
+        "ans":"45°"
+    },
+    "9":{
+        "ques":"At one end of a diameter PQ of a circle of radius 5cm, tangent XPY is drawn to the circle. The length of chord AB parallel to XY and at a distance of 8cm from P is", 
+        "options":["5cm", "6cm", "7cm", "8cm"], 
+        "ans":"8cm"
+    },
+    "10":{
+        "ques":"If x=acosθ and y=bsinθ, then b²x²+a²y² is equal to", 
+        "options":["a²b²", "ab", "a⁴b⁴", "a²+b²"], 
+        "ans":"a²b²"
+    },
+    "11":{
+        "ques":"The height of a tower is 100m. When the angle of elevation of the sun changes from 30° to 45°, the shadow of the tower becomes x meters less. The value of x is", 
+        "options":["100m", "100√3m", "100(√3-1)m", "100/√3m"], 
+        "ans":"100(√3-1)m"
+    },
+    "12":{
+        "ques":"The ratio of the area of a circle and an equilateral triangle whose diameter and a side are respectively equal is", 
+        "options":["π:√2", "π:√3", "√3:π", "√2:π"], 
+        "ans":"π:√3"
+    },
+    "13":{
+        "ques":"If the area of a sector of a circle bounded by an arc of length 5π cm is equal to 20π cm sq., the radius of the circle is", 
+        "options":["12cm", "16cm", "8cm", "10cm"], 
+        "ans":"12cm"
+    },
+    "14":{
+        "ques":"The mean of n observations is X. If the first item is increased by 1, second by 2 and so on, then the new mean is", 
+        "options":["X+n", "X+n/2", "X+(n+1)/2", "None of these"], 
+        "ans":"X+(n+1)/2"
+    },
+    "15":{
+        "ques":"Two dice are rolled simultaneously. The probability that they show different faces is", 
+        "options":["2/3", "1/6", "1/3", "5/6"], 
+        "ans":"5/6"
+    }
+}

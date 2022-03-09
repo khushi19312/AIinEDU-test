@@ -21,5 +21,5 @@ const responseSchema = new mongoose.Schema({
         required: true
     }
 })
-const Response = mongoose.model('response', responseSchema);
-module.exports = Response;
+const Response_9 = mongoose.model('response_9', responseSchema);
+module.exports = Response_9;
