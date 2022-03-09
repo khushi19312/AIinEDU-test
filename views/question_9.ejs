@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnare</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src='home.js' defer></script> -->
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <!-- <script type="text/javascript" src="../public/questions.json"></script> -->
+    <script>
+        let ques_no = "<%= Question %>"
+        let Name = "<%= Name %>"
+        let RollNo = "<%= RollNo %>"
+        let q = "<%= q %>"
+        let op = "<%= op %>"
+        let ans = "<%= ans %>"
+        // fetch("questions.json").then( (resp) => {
+        //     questions = resp.json();
+        // })
+        op = op.split(",")
+        // console.log(typeof op);
+    </script>
+</head>
+<body onload="startTimer()">
+    <div class="header">
+        <h2>Mathematics Questionnare</h2>
+        <h3>Class 8</h3>
+    </div>
+    <div class="timer">
+        <h3>Time</h3>
+        <h3 id="stopwatch">00:00:00</h3>
+    </div>
+    <div class="question">
+        <h3>Question text goes here</h3>
+    </div>
+    <!-- <form></form> -->
+    <div class="options">
+        <div class="opradio">
+            <label class="rad">
+                <input type="radio" id="op1" name="option" value=0>
+                <span>option 1</span><br>
+            </label>
+            <label class="rad">
+                <input type="radio" id="op2" name="option" value=1>
+                <span>option 2</span><br>
+            </label>
+            <label class="rad">
+                <input type="radio" id="op3" name="option" value=2>
+                <span>option 3</span><br>
+            </label>
+            <label class="rad">
+                <input type="radio" id="op4" name="option" value=3>
+                <span>option 4</span><br>
+            </label>
+        </div>
+    </div>
+    <div class="next">
+        <button id="nextques" onclick="next()">Next question</button>
+    </div>
+</body>
+<script>
+    const timer = document.getElementById("stopwatch");
+    let QUES = document.querySelectorAll(".question h3");
+    let options = document.querySelectorAll(".rad span")
+    let hr = 0;
+    let min = 0;
+    let sec = 0;
+    function startTimer() {
+        // console.log(QUES[0]);
+        QUES[0].innerHTML = q;
+        options[0].innerHTML = op[0];
+        options[1].innerHTML = op[1];
+        options[2].innerHTML = op[2];
+        options[3].innerHTML = op[3];
+        hr=0;
+        min=0;
+        sec=0;
+        timerCycle();
+    }
+    function timerCycle() {
+        sec = parseInt(sec);
+        min = parseInt(min);
+        hr = parseInt(hr);
+        sec = sec + 1;
+        if (sec == 60) {
+            min = min + 1;
+            sec = 0;
+        }
+        if (min == 60) {
+            hr = hr + 1;
+            min = 0;
+            sec = 0;
+        }
+        if (sec < 10 || sec == 0) {
+            sec = '0' + sec;
+        }
+        if (min < 10 || min == 0) {
+            min = '0' + min;
+        }
+        if (hr < 10 || hr == 0) {
+            hr = '0' + hr;
+        }
+        timer.innerHTML = hr + ':' + min + ':' + sec;
+        setTimeout("timerCycle()", 1000);
+    }
+    function resetTimer() {
+        timer.innerHTML = '00:00:00';
+    }
+    let ret = []
+    function next() {
+        // console.log(op[document.querySelector('input[name="option"]:checked').value]);
+        let answer = op[document.querySelector('input[name="option"]:checked').value];
+        let dict = {}
+        dict['ans']=answer;
+        dict['time']=hr + ':' + min + ':' + sec;
+        ret[ques_no]=dict;
+        // $.post("/question?ques="+ques_no+"&name="+Name+"&rollno="+RollNo,
+        // {
+        //     ques: ques_no,
+        //     ans: answer
+        // },
+        // function (data, status) {
+        //     console.log(data);
+        // });
+        if(ques_no<=15){
+            ques_no = parseInt(ques_no) + 1;
+            // console.log(ques_no);
+            window.location.replace('/answer?ques='+ques_no+'&ans='+answer+'&time='+hr + ':' + min + ':' + sec+'&name='+Name+'&rollno='+RollNo);
+            // window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
+        }
+        else{
+            // console.log(ret[1])
+            // console.log(ret[4])
+            // console.log(ret[8])
+            // console.log(ret[15])
+            // window.location.replace('/confirmation');
+        }
+    }
+</script>
+</html>

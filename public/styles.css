@@ -24,6 +24,18 @@ body{
     padding: 20px;
     color: #2F5061;
 }
+.info2{
+    font-family: "Roboto";
+    height: 80%;
+    width: 40%;
+    top: 12%;
+    left: 10%;
+    position: absolute;
+    /* background-color: #E57F84; */
+    padding: 10px;
+    color: #2F5061;
+    font-size: 20px;
+}
 #heading{
 }
 #prompts{
@@ -88,6 +100,54 @@ body{
     padding: 20px;    
     color: #222222;
 }
+
+/* ----------------- class ---------------*/
+#button_8{
+    font: "Roboto";
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2bad8d;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#button_9{
+    font: "Roboto";
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2bad8d;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#button_10{
+    font: "Roboto";
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2bad8d;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
 .header{
     font-family: "Roboto";
     color: #2bad8d;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <!-- <script src='home.js' defer></script> -->
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <script>
+        let Name = "<%= Name %>"
+        let RollNo = "<%= RollNo %>"
+        let proceed_8 = ()=>{
+            console.log("clicked")
+            window.location.replace('/questions_8?ques=1&name='+Name+'&rollno='+RollNo);
+        }
+        let proceed_9 = ()=>{
+            console.log("clicked")
+            window.location.replace('/questions_9?ques=1&name='+Name+'&rollno='+RollNo);
+        }
+        let proceed_10 = ()=>{
+            console.log("clicked")
+            window.location.replace('/questions_10?ques=1&name='+Name+'&rollno='+RollNo);
+        }
+    </script>
+</head>
+<body>
+    <div class="info2">
+        <h1 id="heading">Welcome</h1>
+        <h4 id="prompt">Choose your class and proceed to take the quiz</h4>
+        <!-- <button id="button2">Clear</button> -->
+    </div>
+    <div>
+        <button id="button_8" onclick="proceed_8()">Class 8</button>
+        <button id="button_9" onclick="proceed_9()">Class 9</button>
+        <button id="button_10" onclick="proceed_10()">Class 10</button>
+    </div>
+</body>
+<script>
+    const name_display = document.getElementById("heading");
+    name_display.innerHTML = "Welcome " + Name
+</script>
+</html>
