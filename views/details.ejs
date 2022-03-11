@@ -21,11 +21,11 @@
         <h5 id="prompts">Enter details and proceed to take the quiz</h5>
         <div>
             <h3>Name</h3>
-            <input type="text" class="input" id="name_input">
+            <input type="text" class="input" id="name_input" required>
         </div>
         <div>
             <h3>Roll number</h3>
-            <input type="text" class="input" id="rollno_input">
+            <input type="text" class="input" id="rollno_input" required>
         </div>
         <button id="button1" onclick="proceed()">Proceed</button>
         <!-- <button id="button2">Clear</button> -->
@@ -33,7 +33,9 @@
     <div class="instructions">
         <h1 id="heading">Instructions</h1>
         <h5 id="prompts">Read all the instructions carefully before proceeding</h5>
-        <h4>All instructions go here</h4>
+        <div>
+            <h4>All instructions go here</h4>
+        </div>
     </div>
 </body>
 <script>
