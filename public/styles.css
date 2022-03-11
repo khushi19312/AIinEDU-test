@@ -36,7 +36,19 @@ body{
     color: #2F5061;
     font-size: 20px;
 }
-#heading{
+.info3{
+    font-family: "Roboto";
+    height: 80%;
+    width: 80%;
+    top: 12%;
+    left: 10%;
+    position: absolute;
+    /* background-color: #E57F84; */
+    padding: 20px;
+    color: #2F5061;
+}
+#heading2{
+    font-size: 50px;
 }
 #prompts{
     /* color: #4297A0; */
@@ -77,17 +89,18 @@ body{
     font-size: 18px;
 }
 #button2{
+    font: "Roboto";
     position: relative;
-    top: 5%;
-    left: 4%;
-    width: 30%;
+    top: 10%;
+    left: 0%;
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    background-color: #E57F84;
+    background-color: #2bad8d;
     color: white;
-    text-align: left;
-    font-size: 15px;
+    text-align: center;
+    font-size: 18px;
 }
 .instructions{
     font-family: "Roboto";

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <!-- <script src='home.js' defer></script> -->
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <script>
+        let proceed = ()=>{
+            console.log("clicked")
+            window.location.replace('/details');
+        }
+    </script>
+</head>
+<body>
+    <div class="info3">
+        <h1 id="heading2">Welcome!</h1>
+        <br>
+        <h3 id="prompts">This test is a part of a study conducted by students of IIIT Delhi in the field of AI in Education. 
+            We are working towards analysing the use of resources by a student and hence their performance to make make better resources available to the students. 
+        </h3>
+        <h3>
+            None of your personal details will be made public as a part of the study. Your anonymity will be maintained at all stages of the study.
+            By clicking on the "proceed" button you are giving consent to participate in our study and contribute your intellectual property for the same.
+        </h3>
+        
+        <button id="button2" onclick="proceed()">Proceed</button>
+    </div>
+</body>
+<script>
+</script>
+</html>

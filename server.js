@@ -31,11 +31,15 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "/public/")));
 
 app.get("/", (req, res) => {
-    res.render("details", { title: "Home" });
+    res.render("consent", { title: "Home" });
+});
+
+app.get("/details", (req, res) => {
+    res.render("details", { title: "Details" });
 });
 
 app.get("/class", (req, res) => {
-    res.render("class", { title: "Home", Name: req.query.name, RollNo: req.query.rollno });
+    res.render("class", { title: "Class", Name: req.query.name, RollNo: req.query.rollno });
 });
 
 
