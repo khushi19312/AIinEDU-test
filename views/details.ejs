@@ -11,7 +11,12 @@
     <script>
         let proceed = ()=>{
             console.log("clicked")
-            window.location.replace('/class?name='+document.querySelector("#name_input").value+'&rollno='+document.querySelector("#rollno_input").value);
+            if(document.querySelector("#name_input").value=="" || document.querySelector("#rollno_input").value==""){
+                alert("Necessary to fill details before proceeding!");
+            }
+            else{
+                window.location.replace('/class?name='+document.querySelector("#name_input").value+'&rollno='+document.querySelector("#rollno_input").value);
+            }
         }
     </script>
 </head>
@@ -21,11 +26,11 @@
         <h5 id="prompts">Enter details and proceed to take the quiz</h5>
         <div>
             <h3>Name</h3>
-            <input type="text" class="input" id="name_input" required>
+            <input type="text" class="input" id="name_input" required="true">
         </div>
         <div>
             <h3>Roll number</h3>
-            <input type="text" class="input" id="rollno_input" required>
+            <input type="text" class="input" id="rollno_input" required="true">
         </div>
         <button id="button1" onclick="proceed()">Proceed</button>
         <!-- <button id="button2">Clear</button> -->
