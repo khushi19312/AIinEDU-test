@@ -126,9 +126,9 @@
         //     console.log(data);
         // });
         if(ques_no<=15){
-            ques_no = parseInt(ques_no) + 1;
+            ques_no = parseInt(ques_no);
             // console.log(ques_no);
-            window.location.replace('/answer_10?ques='+ques_no+'&ans='+answer+'&time='+hr + ':' + min + ':' + sec+'&name='+Name+'&rollno='+RollNo);
+            window.location.replace('/self-reporting_10?ques='+ques_no+'&ans='+answer+'&time='+hr + ':' + min + ':' + sec+'&name='+Name+'&rollno='+RollNo);
             // window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
         }
         else{
