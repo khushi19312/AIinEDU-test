@@ -19,6 +19,22 @@ const responseSchema = new mongoose.Schema({
     Time:{
         type: String,
         required: true
+    },
+    SR1:{
+        type: String,
+        required: true
+    },
+    SR2:{
+        type: String,
+        required: true
+    },
+    SR3:{
+        type: String,
+        required: true
+    },
+    SR4:{
+        type: String,
+        required: true
     }
 })
 const Response_8 = mongoose.model('response_8', responseSchema);

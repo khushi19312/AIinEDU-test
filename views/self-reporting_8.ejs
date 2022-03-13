@@ -14,77 +14,71 @@
         let ques_no = "<%= Question %>"
         let Name = "<%= Name %>"
         let RollNo = "<%= RollNo %>"
-        let q = "<%= q %>"
-        let op = "<%= op %>"
-        let ans = "<%= ans %>"
-        // fetch("questions.json").then( (resp) => {
-        //     questions = resp.json();
-        // })
-        op = op.split(",")
-        // console.log(typeof op);
+        let ans = "<%= Answer %>"
+        let time = "<%= Time %>"
     </script>
 </head>
-<body onload="startTimer()">
+<body>
     <div class="header">
         <h2>Mathematics Questionnare</h2>
         <h3>Class 8</h3>
     </div>
     <div class="question1">
-        <h3>Have you studied the topic corresponding to this question?</h3>
+        <h4>Have you studied the topic corresponding to this question?</h4>
     </div>
-    <div class="options">
+    <div class="options1">
         <div class="opradio">
             <label class="rad">
-                <input type="radio" id="op1" name="option" value=0>
+                <input type="radio" id="op1" name="sr1" value=1>
                 <span>Yes</span><br>
             </label>
             <label class="rad">
-                <input type="radio" id="op2" name="option" value=1>
+                <input type="radio" id="op2" name="sr1" value=0>
                 <span>No</span><br>
             </label>
         </div>
     </div>
     <div class="question2">
-        <h3>Have you seen a similar question before?</h3>
+        <h4>Have you seen a similar question before?</h4>
     </div>
-    <div class="options">
+    <div class="options2">
         <div class="opradio">
             <label class="rad">
-                <input type="radio" id="op1" name="option" value=0>
+                <input type="radio" id="op1" name="sr2" value=1>
                 <span>Yes</span><br>
             </label>
             <label class="rad">
-                <input type="radio" id="op2" name="option" value=1>
+                <input type="radio" id="op2" name="sr2" value=0>
                 <span>No</span><br>
             </label>
         </div>
     </div>
     <div class="question3">
-        <h3>Were you able to figure out how to solve this problem?</h3>
+        <h4>Were you able to figure out how to solve this problem?</h4>
     </div>
-    <div class="options">
+    <div class="options3">
         <div class="opradio">
             <label class="rad">
-                <input type="radio" id="op1" name="option" value=0>
+                <input type="radio" id="op1" name="sr3" value=1>
                 <span>Yes</span><br>
             </label>
             <label class="rad">
-                <input type="radio" id="op2" name="option" value=1>
+                <input type="radio" id="op2" name="sr3" value=0>
                 <span>No</span><br>
             </label>
         </div>
     </div>
     <div class="question4">
-        <h3>Did you have to guess the answer to this question?</h3>
+        <h4>Did you have to guess the answer to this question?</h4>
     </div>
-    <div class="options">
+    <div class="options4">
         <div class="opradio">
             <label class="rad">
-                <input type="radio" id="op1" name="option" value=0>
+                <input type="radio" id="op1" name="sr4" value=1>
                 <span>Yes</span><br>
             </label>
             <label class="rad">
-                <input type="radio" id="op2" name="option" value=1>
+                <input type="radio" id="op2" name="sr4" value=0>
                 <span>No</span><br>
             </label>
         </div>
@@ -96,12 +90,14 @@
 <script>
     let ret = []
     function next() {
-        // console.log(op[document.querySelector('input[name="option"]:checked').value]);
-        let answer = op[document.querySelector('input[name="option"]:checked').value];
         if(ques_no<=15){
-            ques_no = parseInt(ques_no) + 1;
+            ques_no = parseInt(ques_no)+1;
+            let sr_1 = document.querySelector('input[name="sr1"]:checked').value;
+            let sr_2 = document.querySelector('input[name="sr2"]:checked').value;
+            let sr_3 = document.querySelector('input[name="sr3"]:checked').value;
+            let sr_4 = document.querySelector('input[name="sr4"]:checked').value;
             // console.log(ques_no);
-            window.location.replace('/answer_8?ques='+ques_no+'&ans='+answer+'&time='+hr + ':' + min + ':' + sec+'&name='+Name+'&rollno='+RollNo);
+            window.location.replace('/answer_8?ques='+ques_no+'&ans='+ans+'&time='+time+'&name='+Name+'&rollno='+RollNo+'&sr1='+sr_1+'&sr2='+sr_2+'&sr3='+sr_3+'&sr4='+sr_4);
             // window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
         }
     }

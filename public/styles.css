@@ -197,6 +197,42 @@ body{
     width: 80vw;
     height: 20vh;
 }
+.question1{
+    font-family: "Roboto";
+    color: #4b4e6d;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80vw;
+    height: 20vh;
+}
+.question2{
+    font-family: "Roboto";
+    color: #4b4e6d;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80vw;
+    height: 20vh;
+}
+.question3{
+    font-family: "Roboto";
+    color: #4b4e6d;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80vw;
+    height: 20vh;
+}
+.question4{
+    font-family: "Roboto";
+    color: #4b4e6d;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    width: 80vw;
+    height: 20vh;
+}
 .options{
     font-family: "Roboto";
     color: #2bad8d;
@@ -206,6 +242,47 @@ body{
     width: 80vw;
     height: 40vh;
 }
+.options1{
+    font-family: "Roboto";
+    color: #2bad8d;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80vw;
+    height: 40vh;
+    font-size: 16px;
+}
+.options2{
+    font-family: "Roboto";
+    color: #2bad8d;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80vw;
+    height: 40vh;
+    font-size: 16px;
+}
+.options3{
+    font-family: "Roboto";
+    color: #2bad8d;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    width: 80vw;
+    height: 40vh;
+    font-size: 16px;
+}
+.options4{
+    font-family: "Roboto";
+    color: #2bad8d;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80vw;
+    height: 40vh;
+    font-size: 16px;
+}
+
 .opradio{
     position: absolute;
     top: 4%;

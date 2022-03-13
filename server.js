@@ -64,11 +64,17 @@ app.get("/questions_10", (req, res) => {
     // 
 });
 
+app.get("/self-reporting_8", (req, res) => {
+    // console.log(req.query.ques-1+" "+req.query.ans+" "+req.query.time);
+    //write to database    
+    res.render("self-reporting_8", {title: "Self-reporting", Question: req.query.ques, Answer: req.query.ans, Name: req.query.name, RollNo: req.query.rollno, Time: req.query.time});
+});
+
 
 app.get("/answer_8", (req, res) => {
-    console.log(req.query.ques-1+" "+req.query.ans+" "+req.query.time);
+    console.log(req.query.ques-1+" "+req.query.ans+" "+req.query.time+" "+req.query.sr1+" "+req.query.sr2+" "+req.query.sr3+" "+req.query.sr4);
     //write to database
-    const resp = new Response_8({Name:req.query.name, RollNo:req.query.rollno, QuesNo:req.query.ques-1, Answer:req.query.ans, Time:req.query.time})
+    const resp = new Response_8({Name:req.query.name, RollNo:req.query.rollno, QuesNo:req.query.ques-1, Answer:req.query.ans, Time:req.query.time, SR1:req.query.sr1, SR2:req.query.sr2, SR3:req.query.sr3, SR4:req.query.sr4})
     resp.save().then(()=>{
     }).catch((err)=>{
         throw err;
@@ -81,7 +87,7 @@ app.get("/answer_8", (req, res) => {
 app.get("/answer_9", (req, res) => {
     console.log(req.query.ques-1+" "+req.query.ans+" "+req.query.time);
     //write to database
-    const resp = new Response_9({Name:req.query.name, RollNo:req.query.rollno, QuesNo:req.query.ques-1, Answer:req.query.ans, Time:req.query.time})
+    const resp = new Response_9({Name:req.query.name, RollNo:req.query.rollno, QuesNo:req.query.ques-1, Answer:req.query.ans, Time:req.query.time, SR1:req.query.sr1, SR2:req.query.sr2, SR3:req.query.sr3, SR4:req.query.sr4})
     resp.save().then(()=>{
     }).catch((err)=>{
         throw err;
@@ -94,7 +100,7 @@ app.get("/answer_9", (req, res) => {
 app.get("/answer_10", (req, res) => {
     console.log(req.query.ques-1+" "+req.query.ans+" "+req.query.time);
     //write to database
-    const resp = new Response_10({Name:req.query.name, RollNo:req.query.rollno, QuesNo:req.query.ques-1, Answer:req.query.ans, Time:req.query.time})
+    const resp = new Response_10({Name:req.query.name, RollNo:req.query.rollno, QuesNo:req.query.ques-1, Answer:req.query.ans, Time:req.query.time, SR1:req.query.sr1, SR2:req.query.sr2, SR3:req.query.sr3, SR4:req.query.sr4})
     resp.save().then(()=>{
     }).catch((err)=>{
         throw err;
