@@ -9,6 +9,7 @@ const mongoose = require('mongoose')
 const Response_8 = require('./models/responses_8')
 const Response_9 = require('./models/responses_9')
 const Response_10 = require('./models/responses_10')
+const Survey = require('./models/survey')
 const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require('constants')
 const mongoDB = "mongodb+srv://Khushi:AIinEdu_IP@cluster0.eqmkp.mongodb.net/quiz-database?retryWrites=true&w=majority";
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(()=>{
@@ -90,7 +91,7 @@ app.get("/answer_8", (req, res) => {
         throw err;
     })    
     if(req.query.ques<16) res.redirect('/questions_8?ques='+req.query.ques+'&name='+req.query.name+'&rollno='+req.query.rollno);
-    else res.redirect('/confirmation');
+    else res.redirect('/survey?class=8&name='+req.query.name+'&rollno='+req.query.rollno);
     
 });
 
@@ -103,7 +104,7 @@ app.get("/answer_9", (req, res) => {
         throw err;
     })    
     if(req.query.ques<16) res.redirect('/questions_9?ques='+req.query.ques+'&name='+req.query.name+'&rollno='+req.query.rollno);
-    else res.redirect('/confirmation');
+    else res.redirect('/survey?class=9&name='+req.query.name+'&rollno='+req.query.rollno);
     
 });
 
@@ -116,7 +117,7 @@ app.get("/answer_10", (req, res) => {
         throw err;
     })    
     if(req.query.ques<16) res.redirect('/questions_10?ques='+req.query.ques+'&name='+req.query.name+'&rollno='+req.query.rollno);
-    else res.redirect('/confirmation');
+    else res.redirect('/survey?class=10&name='+req.query.name+'&rollno='+req.query.rollno);
     
 });
 
@@ -124,7 +125,16 @@ app.post("/questions", (req, res) => {
     console.log(req.body.ques+" "+req.body.ans);
 });
 
+app.get("/survey", (req, res) => {
+    res.render("survey", { title: "Survey", Name: req.query.name, RollNo: req.query.rollno, Class: req.query.class});
+});
+
 app.get("/confirmation", (req, res) => {
+    const sur = new Survey({Class: req.query.class, Name:req.query.name, RollNo:req.query.rollno, L1:req.query.l1, L2:req.query.l2, L3:req.query.l3, L4:req.query.l4})
+    sur.save().then(()=>{
+    }).catch((err)=>{
+        throw err;
+    })
     res.render("confirmation", { title: "Confirmation"});
 });
 

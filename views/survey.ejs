@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <script>
+        let c =  "<%= Class %>"
+        let name =  "<%= Name %>"
+        let rollno =  "<%= RollNo %>"
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Survey</h1>
+        <h4 id="ins">Take a few minutes to complete this test by answering these simple questions!
+            Answer all the questions on a scale of 1 to 5. With 1 being least and 5 being most.
+            <br>
+        </h4>
+        
+    </div>
+    <div class="survey1">
+        <h4>How would you rate the difficulty of the test?</h4>
+        <div id="likert1">
+            <tr>
+                <td><label class="rad"><input type="radio" name="l1" value="1" /></label></td>
+                <td><label class="rad"><input type="radio" name="l1" value="2" /></label></td>
+                <td><label class="rad"><input type="radio" name="l1" value="3" /></label></td>
+                <td><label class="rad"><input type="radio" name="l1" value="4" /></label></td>
+                <td><label class="rad"><input type="radio" name="l1" value="5" /></label></td>
+            </tr>
+        </div>
+    </div>
+    <div class="survey2">
+        <h4>How prepared were you for the test?</h4>
+        <div id="likert2">
+            <tr>
+                <td><label class="rad"><input type="radio" name="l2" value="1" /></label></td>
+                <td><label class="rad"><input type="radio" name="l2" value="2" /></label></td>
+                <td><label class="rad"><input type="radio" name="l2" value="3" /></label></td>
+                <td><label class="rad"><input type="radio" name="l2" value="4" /></label></td>
+                <td><label class="rad"><input type="radio" name="l2" value="5" /></label></td>
+            </tr>
+        </div>
+    </div>
+    <div class="survey3">
+        <h4>How much time did you spend studying from the resources?</h4>
+        <div id="likert3">
+            <tr>
+                <td><label class="rad"><input type="radio" name="l3" value="1" /></label></td>
+                <td><label class="rad"><input type="radio" name="l3" value="2" /></label></td>
+                <td><label class="rad"><input type="radio" name="l3" value="3" /></label></td>
+                <td><label class="rad"><input type="radio" name="l3" value="4" /></label></td>
+                <td><label class="rad"><input type="radio" name="l3" value="5" /></label></td>
+            </tr>
+        </div>
+    </div>
+    <div class="survey4">
+        <h4>How helpful were the resources provided to you for this test?</h4>
+        <div id="likert4">
+            <tr>
+                <td><label class="rad"><input type="radio" name="l4" value="1" /></label></td>
+                <td><label class="rad"><input type="radio" name="l4" value="2" /></label></td>
+                <td><label class="rad"><input type="radio" name="l4" value="3" /></label></td>
+                <td><label class="rad"><input type="radio" name="l4" value="4" /></label></td>
+                <td><label class="rad"><input type="radio" name="l4" value="5" /></label></td>
+            </tr>
+        </div>
+    </div>
+    <div class="next">
+        <button id="nextques" onclick="next()">Submit</button>
+    </div>
+</body>
+<script>
+    function next() {
+        let l_1 = document.querySelector('input[name="l1"]:checked').value;
+        let l_2 = document.querySelector('input[name="l2"]:checked').value;
+        let l_3 = document.querySelector('input[name="l3"]:checked').value;
+        let l_4 = document.querySelector('input[name="l4"]:checked').value;
+        window.location.replace('/confirmation?class='+c+'&name='+name+'&rollno='+rollno+'&l1='+l_1+'&l2='+l_2+'&l3='+l_3+'&l4='+l_4);
+    }
+</script>
+</html>

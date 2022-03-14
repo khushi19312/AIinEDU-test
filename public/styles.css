@@ -170,6 +170,9 @@ body{
     width: 80vw;
     height: 10vh;
 }
+/* #ins{
+    color: #2F5061;
+} */
 .timer{
     font-family: "Roboto";
     color: #2bad8d;
@@ -365,4 +368,32 @@ body{
     font-family: "Roboto";
     color: #2bad8d;
 }
-
+/* survey -------------------------------------------------------------------- */
+.survey1{
+    font-family: "Roboto";
+    color: #2F5061;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.survey2{
+    font-family: "Roboto";
+    color: #2F5061;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.survey3{
+    font-family: "Roboto";
+    color: #2F5061;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+.survey4{
+    font-family: "Roboto";
+    color: #2F5061;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
