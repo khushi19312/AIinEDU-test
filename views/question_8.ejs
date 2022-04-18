@@ -26,12 +26,15 @@
 </head>
 <body onload="startTimer()">
     <div class="header">
-        <h2>Mathematics Questionnare</h2>
+        <h2>Questionnare</h2>
         <h3>Class 8</h3>
     </div>
     <div class="timer">
         <h3>Time</h3>
         <h3 id="stopwatch">00:00:00</h3>
+    </div>
+    <div class="qn">
+        <h4 id="ques_number"></h4>
     </div>
     <div class="question">
         <h3>Question text goes here</h3>
@@ -57,6 +60,9 @@
             </label>
         </div>
     </div>
+    <div class="skip">
+        <button id="skipques" onclick="skip()">Skip question</button>
+    </div>
     <div class="next">
         <button id="nextques" onclick="next()">Next question</button>
     </div>
@@ -64,7 +70,8 @@
 <script>
     const timer = document.getElementById("stopwatch");
     let QUES = document.querySelectorAll(".question h3");
-    let options = document.querySelectorAll(".rad span")
+    let options = document.querySelectorAll(".rad span");
+    let ques_number_text = document.getElementById("ques_number");
     let hr = 0;
     let min = 0;
     let sec = 0;
@@ -75,6 +82,8 @@
         options[1].innerHTML = op[1];
         options[2].innerHTML = op[2];
         options[3].innerHTML = op[3];
+        // console.log(ques_number_text.innerHTML)
+        ques_number_text.innerHTML = "Question "+ques_no
         hr=0;
         min=0;
         sec=0;
@@ -113,6 +122,36 @@
     function next() {
         // console.log(op[document.querySelector('input[name="option"]:checked').value]);
         let answer = op[document.querySelector('input[name="option"]:checked').value];
+        let dict = {}
+        dict['ans']=answer;
+        dict['time']=hr + ':' + min + ':' + sec;
+        ret[ques_no]=dict;
+        // $.post("/question?ques="+ques_no+"&name="+Name+"&rollno="+RollNo,
+        // {
+        //     ques: ques_no,
+        //     ans: answer
+        // },
+        // function (data, status) {
+        //     console.log(data);
+        // });
+        if(ques_no<=15){
+            ques_no = parseInt(ques_no);
+            // console.log(ques_no);
+            window.location.replace('/self-reporting_8?ques='+ques_no+'&ans='+answer+'&time='+hr + ':' + min + ':' + sec+'&name='+Name+'&rollno='+RollNo);
+            // window.location.replace('/questions?ques='+ques_no+'&name='+Name+'&rollno='+RollNo);
+        }
+        else{
+            // console.log(ret[1])
+            // console.log(ret[4])
+            // console.log(ret[8])
+            // console.log(ret[15])
+            // window.location.replace('/confirmation');
+        }
+        
+    }
+    function skip() {
+        // console.log(op[document.querySelector('input[name="option"]:checked').value]);
+        let answer = "-";
         let dict = {}
         dict['ans']=answer;
         dict['time']=hr + ':' + min + ':' + sec;

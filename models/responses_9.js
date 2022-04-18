@@ -20,14 +20,6 @@ const responseSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    SR1:{
-        type: String,
-        required: true
-    },
-    SR2:{
-        type: String,
-        required: true
-    },
     SR3:{
         type: String,
         required: true

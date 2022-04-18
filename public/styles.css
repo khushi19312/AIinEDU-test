@@ -191,11 +191,21 @@ body{
     width: 5vw;
     height: 10vh;
 }
+.qn{
+    font-family: "Roboto";
+    background-color: #2bad8d;
+    color: #ffffff;
+    position: absolute;
+    padding-left: 15px;
+    top: 22%;
+    left: 9%;
+    width: 80vw;
+}
 .question{
     font-family: "Roboto";
     color: #4b4e6d;
     position: absolute;
-    top: 30%;
+    top: 32%;
     left: 10%;
     width: 80vw;
     height: 20vh;
@@ -204,7 +214,7 @@ body{
     font-family: "Roboto";
     color: #4b4e6d;
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 10%;
     width: 80vw;
     height: 20vh;
@@ -213,7 +223,7 @@ body{
     font-family: "Roboto";
     color: #4b4e6d;
     position: absolute;
-    top: 35%;
+    top: 37%;
     left: 10%;
     width: 80vw;
     height: 20vh;
@@ -240,7 +250,7 @@ body{
     font-family: "Roboto";
     color: #2bad8d;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 10%;
     width: 80vw;
     height: 40vh;
@@ -249,7 +259,7 @@ body{
     font-family: "Roboto";
     color: #2bad8d;
     position: absolute;
-    top: 25%;
+    top: 27%;
     left: 10%;
     width: 80vw;
     height: 40vh;
@@ -259,7 +269,7 @@ body{
     font-family: "Roboto";
     color: #2bad8d;
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 10%;
     width: 80vw;
     height: 40vh;
@@ -335,6 +345,26 @@ body{
     padding: 0 8px;
 }
 /* --------------------------------------------------*/
+.skip{
+    font-family: "Roboto";
+    position: absolute;
+    top: 83%;
+    left: 80%;
+    width: 10vw;
+    height: 10vh;
+}
+#skipques{
+    font: "Roboto";
+    position: absolute;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2bad8d;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
 .next{
     font-family: "Roboto";
     position: absolute;
