@@ -17,13 +17,13 @@ mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).t
 }).catch(err => console.log(err));
 
 const fs = require('fs');
-let data_8 = fs.readFileSync(path.join(__dirname, '/public/questions_8.json'));
+let data_8 = fs.readFileSync(path.join(__dirname, '/public/questions_8_maths.json'));
 let questions_8 = JSON.parse(data_8);
 
-let data_9 = fs.readFileSync(path.join(__dirname, '/public/questions_9.json'));
+let data_9 = fs.readFileSync(path.join(__dirname, '/public/questions_9_maths.json'));
 let questions_9 = JSON.parse(data_9);
 
-let data_10 = fs.readFileSync(path.join(__dirname, '/public/questions_10.json'));
+let data_10 = fs.readFileSync(path.join(__dirname, '/public/questions_10_maths.json'));
 let questions_10 = JSON.parse(data_10);
 
 

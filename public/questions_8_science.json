@@ -1,0 +1,92 @@
+{
+    "1":{
+        "ques":"Which of the following is not true for fertilizers?", 
+        "options":["They increase the yield", "Their excessive use disturbs the balance of nutrients in soil", "They are generally used in small quantity", "They are environment friendly"], 
+        "ans":"They are environment friendly"
+    },
+    "2":{
+        "ques":"The disease caused by a protozoan and spread by an insect is", 
+        "options":["Dengue", "Malaria", "Polio", "Measles"], 
+        "ans":"Measles"
+    },
+    "3":{
+        "ques":"Which of the following groups contains all synthetic substances?", 
+        "options":["Nylon, tprylene, wool", "Cotton, polycot, rayon", "PVC, polythene, bakelite", "Acrylic, silk, wool"], 
+        "ans":"PVC, polythene, bakelite"
+    },
+    "4":{
+        "ques":"Metals generally react with dilute acids to produce hydrogen gas. Which one of the following metals does not react with dilute hydrochloric acid?", 
+        "options":["Magnesium", "Aluminum", "Iron", "Copper"], 
+        "ans":"Copper"
+    },
+    "5":{
+        "ques":"Coal is processed in industries to get some useful products. Which of the following is not obtained from coal?", 
+        "options":["Coke", "Coal tar", "Coal gas", "CNG"], 
+        "ans":"CNG"
+    },
+    "6":{
+        "ques":"Magnesium ribbon on burning in air produces: ", 
+        "options":["Magnesium oxide, water, and light", "Magnesium oxide and heat", "Magnesium oxide, heat, and light", "Magnesium oxide, water, and heat"], 
+        "ans":"Magnesium oxide, heat, and light"
+    },
+    "7":{
+        "ques":"Which one of the following statements is true about endemic species?", 
+        "options":["They are found exclusively in a specific habitat", "Endemic species can never become endangered", "They are found only in zoos and botanical gardens", "They are not affected by the destruction of their habitat"], 
+        "ans":"They are found exclusively in a specific habitat"
+    },
+    "8":{
+        "ques":"Choose the correct statements: ", 
+        "options":["Genes are located in the chromosomes", "Cell is located in the nucleus", "Chromosomes are located in the nucleolus", "Cell membrane surrounds the nucleus"], 
+        "ans":"Genes are located in the chromosomes"
+    },
+    "9":{
+        "ques":"In human beings, after fertilisation, the structure which gets embedded in the wall of uterus is:", 
+        "options":["Ovum", "Embryo", "Foetus", "Zygote"], 
+        "ans":"Embryo"
+    },
+    "10":{
+        "ques":"For the metamorphosis of tadpoles which of the following elements must be available in water?", 
+        "options":["Chlorine", "Carbon", "Sulphur", "Iodine"], 
+        "ans":"Iodine"
+    },
+    "11":{
+        "ques":"During dry weather, while combing hair, sometimes we experience hair flying apart. The force responsible for this is:", 
+        "options":["Force of gravity", "Electrostatic force", "Force of friction", "Magnetic force"], 
+        "ans":"Electrostatic force"
+    },
+    "12":{
+        "ques":"If we apply oil on door hinges, the friction will: ", 
+        "options":["Increase", "Decrease", "Disappear altogether", "Will remain unchanged"], 
+        "ans":"Decrease"
+    },
+    "13":{
+        "ques":"In order to reduce the loudness of a sound, we have to: ", 
+        "options":["Decrease its frequency of vibration of the sound", "Increase its frequency of vibration of the sound", "Decrease its amplitude of vibration of the sound", "Increase its amplitude of vibration of the sound"], 
+        "ans":"Decrease its amplitude of vibration of the sound"
+    },
+    "14":{
+        "ques":"When electric current is passed through a conducting solution, there is a change of colour of the solution. This indicates: ", 
+        "options":["The chemical effect of current", "The heating effect of current", "The magnetic effect of current", "The lightning effect of current"], 
+        "ans":"The chemical effect of current"
+    },
+    "15":{
+        "ques":"Two charged objects are brought close to each other. Choose the most appropriate statement from the following options: ", 
+        "options":["They may attract", "They may repel", "They may attract or repel depending on the type of charges they carry", "There will be no effect"], 
+        "ans":"They may attract or repel depending on the type of charges they carry"
+    },
+    "16":{
+        "ques":"Which of the following statements is correct regarding rods and cones in the human eye?", 
+        "options":["Cones are sensitive to dim light", "Cones are sensitive to bright light", "Rods are sensitive to bright light", "Rods can sense colour"], 
+        "ans":"Cones are sensitive to bright light"
+    },
+    "17":{
+        "ques":"An astronaut standing on the surface of the moon throws a ball upwards. The ball would: ", 
+        "options":["Directly fall down from the point it is released", "Hang in space", "Go up and then, come back to the surface of the moon", "Keep going up never to come back"], 
+        "ans":"Go up and then, come back to the surface of the moon"
+    },
+    "18":{
+        "ques":"Potable water is the water which is: ", 
+        "options":["Obtained from a river", "Obtained from a lake", "Pure and fit for drinking","Used only for washing clothes"], 
+        "ans":"Pure and fit for drinking"
+    }
+}
