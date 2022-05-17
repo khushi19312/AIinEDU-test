@@ -1,0 +1,77 @@
+{
+    "1":{
+        "ques":"On converting 25°C, 38°C and 66°C to Kelvin scale, the correct sequence of temperature will be?", 
+        "options":["298 K, 311 K and 339 K", "298 K, 300 K and 338 K", "273 K, 278 K and 543 K", "298 K, 310 K and 338 K"], 
+        "angit logins":"298 K, 311 K and 339 K"
+    },
+    "2":{
+        "ques":"Tincture of iodine has antiseptic properties. This solution is made by dissolving", 
+        "options":["iodine in potassium iodide", "iodine in vaseline", "iodine in water", "iodine in alcohol"], 
+        "ans":"iodine in alcohol"
+    },
+    "3":{
+        "ques":"Which of the following would weigh the highest?", 
+        "options":["0.2 mole of sucrose (C12H22O11)", "2 moles of CO2", "2 moles of CaCO3", "10 moles of H2O"], 
+        "ans":"2 moles of CaCO3"
+    },
+    "4":{
+        "ques":"In a sample of ethyl ethanoate (CH3COOC2H5) the two oxygen atoms have the same number of electrons but different number of neutrons. Which of the following is the correct reason for it?", 
+        "options":["One of the oxygen atoms has gained electrons.", "One of the oxygen atoms has gained two neutrons.", "The two oxygen atoms are isotopes", "The two oxygen atoms are isobars."], 
+        "ans":"The two oxygen atoms are isotopes."
+    },
+    "5":{
+        "ques":"Plasmolysis in a plant cell is defined as:", 
+        "options":["breakdown (lysis) of plasma membrane in hypotonic medium", "shrinkage of cytoplasm in hypertonic medium", "shrinkage of nucleoplasm", "none of them"], 
+        "ans":"shrinkage of cytoplasm in hypertonic medium"
+    },
+    "6":{
+        "ques":"Girth of stem increases due to: ", 
+        "options":["apical meristem", "lateral meristem", "intercalary meristem", "vertical meristem"], 
+        "ans":"lateral meristem"
+    },
+    "7":{
+        "ques":"Which one is the most striking or (common) character of the vertebrates?", 
+        "options":["Presence of notochord", "Presence of triploblastic condition", "Presence of gill pouches", "Presence of coelom"], 
+        "ans":"Presence of notochord"
+    },
+    "8":{
+        "ques":"If the displacement of an object is proportional to square of time, then the object moves with?", 
+        "options":["uniform velocity", "uniform acceleration", "Chromosomes are located in the nucleolus", "Cell membrane surrounds the nucleus"], 
+        "ans":"uniform acceleration"
+    },
+    "9":{
+        "ques":"An object of mass 2 kg is sliding with a constant velocity of 4 m s’1 on a frictionless horizontal table. The force required to keep the object moving with the same velocity is: ", 
+        "options":["32N", "0N", "2N", "8N"], 
+        "ans":"Embryo"
+    },
+    "10":{
+        "ques":"The gravitational force between two objects is F. If masses of both objects are halved without changing distance between them, then the gravitational force would become", 
+        "options":["F/4", "F/2", "F", "2F"], 
+        "ans":"F/4"
+    },
+    "11":{
+        "ques":"A girl is carrying a school bag of 3 kg mass on her back and moves 200 m on a levelled road. The work done against the gravitational force will be (g =10 m s’2)?", 
+        "options":["6×10^3 J", "6 J", "0.6 J", "Zero"], 
+        "ans":"Zero"
+    },
+    "12":{
+        "ques":"Before playing the orchestra in a musical concert, a sitarist tries to adjust the tension and pluck the string suitably. By doing so, he is adjusting", 
+        "options":["intensity of sound only", "amplitude of sound only", "frequency of the sitar string with the frequency of other musical instruments", "loudness of sound"], 
+        "ans":"frequency of the sitar string with the frequency of other musical instruments"
+    },
+    "13":{
+        "ques":" Choose the wrong statement:", 
+        "options":["High blood pressure is caused by excessive weight and lack of exercise", "Cancers can be caused by genetic abnormalities", "Peptic ulcers are caused by eating acidic food", "Acne is not caused by staphylococci"], 
+        "ans":"Peptic ulcers are caused by eating acidic food"
+    },
+    "14":{
+        "ques":"Choose the correct sequences", 
+        "options":["CO2 in atmosphere → decomposers → organic carbon in animals → organic carbon in plants", "CO2 in atmosphere → organic carbon in plants → organic carbon in animals → inorganic carbon in soil", "Inorganic carbonates in water → organic carbon in plants → organic carbon in animals → scavengers", "Organic carbon in animals → decomposers → CO2 in atmosphere→ organic carbon in plants"], 
+        "ans":"CO2 in atmosphere → organic carbon in plants → organic carbon in animals → inorganic carbon in soil"
+    },
+    "15":{
+        "ques":"Weeds affect the crop plants by", 
+        "options":["killing of plants in field before they grow", "dominating the plants to grow", "competing for various resources of crops (plants) causing low availability of nutrients", "all of the above"], 
+        "ans":"all of the above"
+    }
+}

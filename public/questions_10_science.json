@@ -1,0 +1,82 @@
+{
+    "1":{
+        "ques":"A substance ‘X’ is used in white-washing and is obtained by heating limestone in the absence of air. Identify ‘X’.", 
+        "options":["CaOCl2", "Ca(OH)2", "CaO", "CaCO3"], 
+        "angit logins":"CaOCl2"
+    },
+    "2":{
+        "ques":"Brine is an", 
+        "options":["aqueous solution of sodium hydroxide", "aqueous solution of sodium carbonate", "aqueous solution of sodium chloride", "aqueous solution of sodium bicarbonate"], 
+        "ans":"aqueous solution of sodium chloride"
+    },
+    "3":{
+        "ques":"Which of the following is the correct arrange-ment of the given metals in ascending order of their reactivity? Zinc, Iron, Magnesium, Sodium", 
+        "options":["Zinc > Iron > Magnesium > Sodium", "Sodium > Magnesium > Iron > Zinc", "Sodium > Zinc > Magnesium > Iron", "Sodium > Magnesium > Zinc > Iron"], 
+        "ans":"Sodium > Magnesium > Zinc > Iron"
+    },
+    "4":{
+        "ques":"Which of the following will give a pleasant smell of ester when heated with ethanol and a small quantity of sulphuric acid?", 
+        "options":["CH3COOH", "CH3CH2OH", "CH3OH", "CH3CHO"], 
+        "ans":"Copper"
+    },
+    "5":{
+        "ques":"Which one of the following statements is not correct about the trends in the properties of the elements of a period on going from left to right?", 
+        "options":["The oxides become more acidic", "The elements become less metallic", "There is an increase in the number of valence electrons", "The atoms lose their electrons more easily"], 
+        "ans":"The atoms lose their electrons more easily"
+    },
+    "6":{
+        "ques":"The contraction and expansion movement of the walls of the food pipe is called?", 
+        "options":["translocation", "transpiration", "peristaltic movement", "digestion"], 
+        "ans":"peristaltic movement"
+    },
+    "7":{
+        "ques":"A microscopic gap between a pair of adjacent neurons over which nerve impulses pass is called?", 
+        "options":["neurotransmitter", "dendrites", "axon", "synapse"], 
+        "ans":"synapse"
+    },
+    "8":{
+        "ques":"In Rhizopus, tubular thread like structures bearing sporangia at their tips are called?", 
+        "options":["filaments", "hyphae", "rhizoids", "roots"], 
+        "ans":"hyphae"
+    },
+    "9":{
+        "ques":"Which of these is not a vestigial organ in human beings?", 
+        "options":["Appendix", "Wisdom tooth", "Nictitating membrane", "Gall bladder"], 
+        "ans":"Gall bladder"
+    },
+    "10":{
+        "ques":"The concentration of harmful chemical entering the food chain will be maximum in: ", 
+        "options":["green plants", "man", "birds", "fish"], 
+        "ans":"man"
+    },
+    "11":{
+        "ques":"The main cause for abundant coliform bacteria in the river Ganga is: ", 
+        "options":["disposal of human excreta directly", "Electrostatic force", "Force of friction", "Magnetic force"], 
+        "ans":"disposal of human excreta directly"
+    },
+    "12":{
+        "ques":"A 10 mm long awl pin is placed vertically in front of a concave mirror. A 5 mm long image of the awl pin is formed at 30 cm in front of the mirror. The focal length of this mirror is?", 
+        "options":["-30 cm", "-20 cm", "-40 cm", "-60 cm"], 
+        "ans":"-20 cm"
+    },
+    "13":{
+        "ques":"At noon, the sun appears white as: ", 
+        "options":["Blue color is scattered the most", "Red color is scattered the most", "Light is least scattered", "All colors of white light are scattered away"], 
+        "ans":"Light is least scattered"
+    },
+    "14":{
+        "ques":"100 J of heat is produced each second in a 4 ohm resistor. The potential difference across the resister will be: ", 
+        "options":["30 V", "10 V", "20 V", "25 V"], 
+        "ans":"20 V"
+    },
+    "15":{
+        "ques":"To convert an AC generator into a DC generator: ", 
+        "options":["split-ring type commutator must be used", "Split-rings and brushes must be used", "A strong magnetic field has to be used", "A rectangular wire loop has to be used"], 
+        "ans":"split-ring type commutator must be used"
+    },
+    "16":{
+        "ques":"Dead organisms are transformed into petroleum and natural gas in: ", 
+        "options":["presence of air", "absence of air", "presence of sunlight", "none of the above"], 
+        "ans":"absence of air"
+    }
+}
